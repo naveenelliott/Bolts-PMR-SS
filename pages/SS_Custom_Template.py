@@ -48,7 +48,7 @@ for file in csv_files:
     df_list.append(df)
     
 
-st.write(df_list)
+
 # Concatenate all DataFrames into a single DataFrame
 fc_python = pd.concat(df_list, ignore_index=True)
 
