@@ -5,7 +5,7 @@ import streamlit as st
 
 def UpdatingActions():
     # Path to the folder containing CSV action files
-    folder_path = 'Bolts-SS/WeeklyReport PSD'
+    folder_path = 'WeeklyReport PSD'
 
     allowable_teams = ['Boston Bolts U13 NALSS', 'Boston Bolts U14 NALSS']
 
