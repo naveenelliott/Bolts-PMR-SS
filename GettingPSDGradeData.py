@@ -42,7 +42,7 @@ def getting_PSD_grade_data():
         return combined_df
 
     # Example usage
-    folder_path = 'Bolts-SS/WeeklyReport PSD'  # Replace with your folder path
+    folder_path = 'WeeklyReport PSD'  # Replace with your folder path
     end = read_all_csvs_from_folder(folder_path)
     
 
