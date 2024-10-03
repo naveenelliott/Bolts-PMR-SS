@@ -34,7 +34,7 @@ st.markdown(f"<h4 style='text-align: center;'>Date: {selected_date}</h4>", unsaf
 psd_grades = psd_grades[['Player Full Name', 'Pass Completion ', 'Dribble', 'Total Tackles']]
 st.write(psd_grades)
 
-folder_path = 'Bolts-SS/xG Input Files'
+folder_path = 'xG Input Files'
 
 # Find all CSV files in the folder
 csv_files = glob.glob(os.path.join(folder_path, '*.csv'))
@@ -69,7 +69,7 @@ for index, row in fc_python.iterrows():
 
 
 # Path to the folder containing CSV files
-folder_path = 'Bolts-SS/Actions PSD'
+folder_path = 'Actions PSD'
 
 # Find all CSV files in the folder
 csv_files = glob.glob(os.path.join(folder_path, '*.csv'))
