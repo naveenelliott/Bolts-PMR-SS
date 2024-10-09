@@ -55,6 +55,7 @@ if selected_date not in dates:
 selected_date = st.selectbox('Choose the Date (if necessary)', dates, index=dates.index(selected_date))
 st.session_state['selected_date'] = selected_date
 
+combined_actions = combined_actions.loc[combined_actions['Opposition'] == st.session_state['selected_date']]
 
 st.session_state["selected_team"] = selected_team
 st.session_state["selected_opp"] = selected_opp
