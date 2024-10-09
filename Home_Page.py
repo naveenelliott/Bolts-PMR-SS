@@ -30,6 +30,8 @@ if selected_team not in teams:
 selected_team = st.selectbox('Choose the Bolts Team:', teams, index=teams.index(selected_team))
 st.session_state['selected_team'] = selected_team
 
+combined_actions = combined_actions.loc[combined_actions['Team Name'] == st.session_state['selected_team']]
+
 # Selecting the opponent team
 opps = list(combined_actions['Opposition'].unique())
 
@@ -38,6 +40,8 @@ if selected_opp not in opps:
     selected_opp = opps[0]  # Default to the first date if not found
 selected_opp = st.selectbox('Choose the Opposition:', opps, index=opps.index(selected_opp))
 st.session_state['selected_opp'] = selected_opp
+
+combined_actions = combined_actions.loc[combined_actions['Opposition'] == st.session_state['selected_opp']]
 
 # Selecting the date
 dates = list(combined_actions['Match Date'].unique())
